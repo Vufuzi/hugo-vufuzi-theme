@@ -1,0 +1,21 @@
+<script type="application/ld+json">
+{
+	"@context" : "http://schema.org",
+	"@type" : "Organization",
+	"name" : "{{ .Site.Title }}",
+	"url" : "{{ .Site.BaseURL }}",
+	"logo": "{{ .Site.BaseURL }}{{ .Site.Data.theme.logo }}",
+	"address": {
+	  "addressCountry": "{{ .Site.Data.organization.address.addressCountry }}",
+	  "addressLocality": "{{ .Site.Data.organization.address.addressLocality }}",
+	  "addressRegion": "{{ .Site.Data.organization.address.addressRegion }}",
+	  "postalCode": "{{ .Site.Data.organization.address.postalCode }}",
+	  "streetAddress": "{{ .Site.Data.organization.address.streetAddress }}"
+	},
+	"sameAs" : [
+	    "http://vufuzi.com",
+	    "{{ .Site.Data.social.facebookUrl }}",
+	    "{{ .Site.Data.social.twitterUrl }}"
+	]
+}
+</script>

@@ -1,0 +1,22 @@
+<header class="main-header">
+	<nav class="left-navigation" role="navigation">
+		<a href="{{ .Site.BaseURL }}">
+			Start
+		</a>
+		{{ range .Site.Menus.left}}
+			<a href="{{.URL}}"> {{ .Name }} </a>
+		{{ end }}
+	</nav>
+	<figure class="logo">
+	<svg viewBox='0 0 769 812' xml:space='preserve' xmlns='http://www.w3.org/2000/svg'>
+		<path d='m748.728,523.851-361.101,266.849-365.351-261.006 135.306-428.162 448.971-3.613 142.175,425.932z' fill='#039BE5' stroke='#039BE5' stroke-linejoin='round' stroke-miterlimit='10' stroke-width='40'></path>
+		<path d='m21.227,288.921 361.152-266.858 365.4,261.012-135.324,428.175-449.035,3.611-142.193-425.94z' fill='#29B6F6' stroke='#29B6F6' stroke-linecap='round' stroke-linejoin='round' stroke-miterlimit='10' stroke-width='40'></path>
+		<path d='m223.848,268.735h39.424l120.125,280.028 122.089-280.028h39.424l-157.698,362.456h-7.885l-155.479-362.456z' fill='#FFF' stroke='#FFF' stroke-linejoin='round' stroke-miterlimit='10' stroke-width='20'></path>
+	</svg>
+	</figure>
+	<nav class="right-navigation" role="navigation">
+		{{ range .Site.Menus.right }}
+			<a href="{{.URL}}"> {{ .Name }} </a>
+		{{ end }}
+	</nav>
+</header>

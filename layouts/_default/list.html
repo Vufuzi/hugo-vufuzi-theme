@@ -1,0 +1,5 @@
+{{ range .Data.Pages }}
+	{{ if in .Params.series "homepage" }}
+		{{ .Render "single"}}
+	{{ end }}
+{{ end }}
